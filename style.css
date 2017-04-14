@@ -1,0 +1,107 @@
+/**************Toggle Button****************/
+.switch{
+  margin-top: 2.5%;
+  margin-left: 78%;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input{
+  display: none;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CCC;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+input:checked+.slider{
+  background-color: #2196F3;
+
+}
+
+input:focus+.slider{
+  box-shadow: 0 0 1px #2196F3;
+
+}
+
+input:checked+.slider:before{
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+
+}
+
+.slider.round{
+  border-radius: 34px;
+
+}
+
+.slider.round:before{
+  border-radius: 50%;
+}
+
+/***********Step count*****************/
+.box{
+  background-color: #444;
+  color: #c4be92;
+  text-align: center;
+  border-radius: 10px;
+  padding: .6em .6em .1em;
+  width: 4em;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#level{
+
+  font-size: 1em;
+  background-color: transparent;
+  text-align: center;
+  border-width: 0;
+  width: 100%;
+  /*margin: 0 0 .1em 0;*/
+
+}
+
+/**************Four Colors*******************/
+#green, #red, #yellow, #blue {
+  height: 20em;
+  border-radius: 0;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#start, #stop {
+  margin-top: 2.5%;
+}
+
+/******Stylying start and stop button******/
+
+#start, #stop {
+  box-shadow: 10px 10px 5px #888888;
+
+}

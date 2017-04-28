@@ -73,12 +73,11 @@ input:checked+.slider:before{
   padding: .6em .6em .1em;
   width: 4em;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
   box-shadow: 10px 10px 5px #888888;
 }
 
 #level{
-
   font-size: 1em;
   background-color: transparent;
   text-align: center;
@@ -89,10 +88,55 @@ input:checked+.slider:before{
 }
 
 /**************Four Colors*******************/
-#green, #red, #yellow, #blue {
+/*#buttonContainer {
+  align-content: center;
+  margin-left: 5%;
+}*/
+
+#green {
   height: 20em;
-  border-radius: 0;
+  width: 20em;
+  border-radius: 100% 0% 0% 0%;
+  border: 40px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
   box-shadow: 10px 10px 5px #888888;
+}
+
+#red {
+  height: 20em;
+  width: 20em;
+  border-radius:  0% 100% 0% 0%;
+  border: 40px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#yellow {
+  height: 20em;
+  width: 20em;
+  border-radius: 0% 0% 0% 100%;
+  border: 40px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#blue {
+  height: 20em;
+  width: 20em;
+  border-radius: 0% 0% 100% 0%;
+  border: 40px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#strictText {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-family: "Sans Commic"
 }
 
 #start, #stop {

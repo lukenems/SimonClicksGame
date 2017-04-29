@@ -25,7 +25,11 @@ $(document).ready(
     })
 
     $('#start').click(function(){
+      if (correctArr.length === 0) {
       onStartPress()
+    } else {
+      displayColor()
+    }
     })
 
     $('#stop').click(function() {
